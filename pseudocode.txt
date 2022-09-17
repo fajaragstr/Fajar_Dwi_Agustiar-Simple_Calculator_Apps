@@ -15,3 +15,6 @@ ELSE IF "operator" EQUAL 'x"
 ELSE IF "operator" EQUAL ':"
     STORE "result" WITH "number1" DEVIDE "number2"
     DISPLAY "result"
+ELSE 
+    DISPLAY "Invalid operator"
+END IF
