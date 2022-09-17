@@ -1,0 +1,17 @@
+STORE "number1" AS NUMBER WITH ANY VALUE
+STORE "operator" AS STRING WITH ENUM OF "+", "-", "x", ":"
+STORE "number2" AS NUMBER WITH ANY VALUE
+STORE "result" AS INTEGER WITH 0
+
+IF "operator" EQUAL "+"
+    STORE "result" WITH "number1" PLUS "number2"
+    DISPLAY "result"
+ELSE IF "operator" EQUAL '-"
+    STORE "result" WITH "number1" MINUS "number2"
+    DISPLAY "result"
+ELSE IF "operator" EQUAL 'x"
+    STORE "result" WITH "number1" TIMES "number2"
+    DISPLAY "result"
+ELSE IF "operator" EQUAL ':"
+    STORE "result" WITH "number1" DEVIDE "number2"
+    DISPLAY "result"
